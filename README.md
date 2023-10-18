@@ -1,7 +1,26 @@
+
+
 # Label Studio Frontend &middot; ![GitHub](https://img.shields.io/github/license/heartexlabs/label-studio?logo=heartex) ![build](https://github.com/heartexlabs/label-studio-frontend/workflows/Build%20and%20Test/badge.svg) ![npm audit](https://github.com/heartexlabs/label-studio-frontend/actions/workflows/npm_audit.yml/badge.svg)
  ![GitHub release](https://img.shields.io/github/v/release/heartexlabs/label-studio-frontend?include_prereleases) &middot; :sunny:
 
+
 [Website](https://labelstud.io/) • [Docs](https://labelstud.io/guide) • [Twitter](https://twitter.com/heartexlabs) • [Join Slack Community <img src="https://go.heartex.net/docs/images/slack-mini.png" width="18px"/>](https://slack.labelstud.io)
+
+
+```
+git@github.com:fredheir/label-studio-frontend.git
+cd label-studio-frontend
+npm install mobx-react --force
+npm run build-bundle
+cp build/main* ../label-studio/label_studio/frontend/dist/lsf/js/.
+
+cd ../label-studio
+python label_studio/manage.py runserver
+
+
+```
+
+
 
 <br/>
 
