@@ -8,9 +8,13 @@
 
 
 ```
-git@github.com:fredheir/label-studio-frontend.git
+git clone https://github.com/fredheir/label-studio-frontend.git
+git clone https://github.com/HumanSignal/label-studio.git
 cd label-studio-frontend
+rm yarn.lock
+npm install
 npm install mobx-react --force
+npm run build
 npm run build-bundle
 cp build/main* ../label-studio/label_studio/frontend/dist/lsf/js/.
 
